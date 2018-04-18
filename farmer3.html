@@ -1,0 +1,144 @@
+<head>
+  <title>3</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+ <style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.ap{
+  margin:100px;
+}
+</style>
+<body>
+  <div class="ap">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-4">
+      <br /><br /><img alt="Bootstrap Image Preview" src="http://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" /><br /><br />
+      <h3>
+        Name of the Farmer
+      </h3>
+      <h3>
+        KKD Farmer ID
+      </h3>
+    </div>
+    <div class="col-md-4">
+       <br /><br />
+      <button type="button" class="btn btn-md btn-block btn-info">
+        MyAccount
+      </button> <br />
+      <div class="row">
+        <div class="col-md-6">
+      <h6>Active:</h6>
+    </div>
+      <div class="col-md-6">
+       <label class="switch">
+          <input type="checkbox" checked>
+              <span class="slider round"></span>
+        </label>
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-md-6">
+        <h6>Orders Auto Accept:</h6>
+      </div>
+         <div class="col-md-6">
+         <label class="switch">
+          <input type="checkbox" checked>
+              <span class="slider round"></span>
+        </label>
+      </div>
+      </div>
+       <br />
+      <button type="button" class="btn btn-block btn-info">
+        BankDetails
+      </button>
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div><br /><br />
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-4">
+       
+      <button type="button" class="btn btn-block btn-info">
+        ViewProducts
+      </button> <br /><br />
+      <button type="button" class="btn btn-block btn-info">
+        AddProducts
+      </button>
+    </div>
+    <div class="col-md-4">
+       
+      <button type="button" class="btn btn-block btn-info">
+        PreviousOrders
+      </button> <br /><br />
+      <button type="button" class="btn btn-block btn-info">
+        CurrentOrderRequests
+      </button>
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
